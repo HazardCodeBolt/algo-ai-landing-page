@@ -6,7 +6,7 @@ export default function AuthLayout({
   children: React.ReactNode
 }) {  
   return (
-    <main className="grow">
+    <main className="grow" style={{backgroundColor: '#163020'}}>
 
       <PageIllustration />
 

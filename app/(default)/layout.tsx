@@ -25,7 +25,7 @@ export default function DefaultLayout({
 
   return (
     <>
-      <main className="grow">
+      <main className="grow" style={{background: 'linear-gradient(#163020, rgb(21, 23, 25))'}}>
 
         <PageIllustration />
 
