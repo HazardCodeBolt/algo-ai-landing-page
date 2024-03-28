@@ -8,7 +8,7 @@ export default function Header() {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
-            <Link href="/" className="block" aria-label="Cruip">
+            <Link href="/" className="block mt-5" aria-label="AlgoAi">
               <img src='images/neural.png' width='200' style={{filter: 'brightness(0) invert(1)'}}/>
             </Link>
           </div>

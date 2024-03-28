@@ -40,7 +40,7 @@ export default function Hero() {
       <div>
         <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
           
-          <Image src={thumb} width={1024} height={576}  alt='algo ai dashboard' style={{borderRadius: '10px'}} />
+          <Image  unoptimized={true} src={thumb} width={1024} height={576}  alt='algo ai dashboard' style={{borderRadius: '10px'}} />
           
         </div>
       </div>
