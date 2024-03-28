@@ -1,5 +1,6 @@
-import VideoThumb from '@/public/images/hero-image-01.png'
+import thumb from '@/public/images/hero-image-01.png'
 import ModalVideo from '@/components/modal-video'
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -33,14 +34,21 @@ export default function Hero() {
             </div>
           </div>
 
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1024}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
-            videoWidth={1920}
-            videoHeight={1080} />
+          <div>
+
+      {/*  thumbnail */}
+      <div>
+        <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+          
+          <Image src={thumb} width={1024} height={576}  alt='algo ai dashboard' style={{borderRadius: '10px'}} />
+          
+        </div>
+      </div>
+      {/* thumbnail */}
+
+      
+
+    </div>
 
         </div>
 
