@@ -94,7 +94,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <div className={ibmSans.className} dir='rtl'>
-                <blockquote className="text-lg text-gray-400 grow p-3  m-2 bg-gray-800 rounded-lg mr-5"> ?عرض صامت نفس حسابكم أو فيه أحد نقدر نستفسر معه؟ </blockquote>
+                <blockquote className="text-lg text-gray-400 grow p-3  m-2 bg-gray-800 rounded-lg mr-5"> عرض صامت نفس حسابكم أو فيه أحد نقدر نستفسر معه؟ </blockquote>
                 <blockquote className="text-lg text-gray-400 grow p-3 m-2 bg-gray-800 rounded-lg ml-5"> كلها مقسه اشوف 😕 </blockquote>
                 <blockquote className="text-lg text-gray-400 grow p-3 m-2 bg-gray-800 rounded-lg ml-5">  حشا  وهذي عب ما وحده سكنيه صارت ، هذا قصر </blockquote>
               </div>
