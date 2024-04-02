@@ -62,10 +62,10 @@ export default function EmailLister() {
                 <input type="email" className="w-full appearance-none bg-green-700 border border-green-500 focus:border-green-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-green-400" placeholder="Your best email…" aria-label="Your best email…" 
                 onChange={(e) => {setEmail(e.target.value)}}
                 />
-                <button type='reset' className="btn text-green-600 bg-green-100 hover:bg-white shadow" onClick={addToEmailList}> {isSent ? 'Subscribed Successfully' : 'Subscribe'}</button>
+                <button type='reset' className="btn text-green-600 bg-green-100 hover:bg-white shadow" onClick={addToEmailList}> {isSent ? 'Subscribed' : 'Subscribe'}</button>
               </div>
-              {/* Success message */}
-              {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
+              
+              {isSent ?   <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> : ''}
             </form>
 
           </div>
