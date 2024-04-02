@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'Algo Ai',
-  description: 'Unlocking the power of social media using Ai',
+  title: 'Algo AI',
+  description: 'Unlocking the power of social media using AI',
 }
 
 import Hero from '@/components/hero'
 import Features from '@/components/features'
-import Newsletter from '@/components/newsletter'
+import EmailLister from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Testimonials from '@/components/testimonials'
 
@@ -16,7 +16,7 @@ export default function Home() {
       <Features />
       <Zigzag />
       <Testimonials />
-      <Newsletter />
+      <EmailLister />
     </>
   )
 }

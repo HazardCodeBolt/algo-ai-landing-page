@@ -1,6 +1,7 @@
 import thumb from '@/public/images/hero-image-01.png'
 import ModalVideo from '@/components/modal-video'
 import Image from 'next/image';
+import '@/app/css/custom.css';
 
 export default function Hero() {
   return (
@@ -25,8 +26,8 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">Unlocking the power of social media data using our AI Powered tool</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Widen your perspective about your business with the help of Ai. With Algo AI, we analyze social media for you to gain more insights about your customers and get feedback instantly.</p>
+            <h1 className="h1 mb-4 gradient-text" data-aos="fade-up">Unlocking the power of social media data using our AI Powered tool</h1>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Widen your perspective about your business with the help of AI. With Algo AI, we analyze social media for you to gain more insights about your customers and get feedback instantly.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-green-600 hover:bg-green-700 w-full mb-4 sm:w-auto sm:mb-0" href="#email-list">Register to Email List</a>
@@ -40,7 +41,7 @@ export default function Hero() {
       <div>
         <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
           
-          <Image  unoptimized={true} src={thumb} width={1024} height={576}  alt='algo ai dashboard' style={{borderRadius: '10px'}} />
+          <Image  unoptimized={true} src={thumb} width={1024} height={576}  alt='algo AI dashboard' style={{borderRadius: '10px'}} />
           
         </div>
       </div>
