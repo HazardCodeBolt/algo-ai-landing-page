@@ -5,9 +5,20 @@ export default function EmailLister() {
   let [email, setEmail] = useState('');
   let [isSent, setIsSent] = useState(false);
 
+  function validateEmail(email: string): boolean {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
   async function addToEmailList() {
     const url = 'https://algo-ai-email-list-api.onrender.com/emails';
     const data = { email }; 
+
+    if (!validateEmail(email)) {
+      throw new Error('Invalid email format');
+    } else {
+      setIsSent(true);
+    }
   
     try {
       const response = await fetch(url, {
@@ -15,7 +26,7 @@ export default function EmailLister() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
-  
+      
       if (!response.ok) {
         throw new Error(`Error adding email: ${response.status}`);
       }
@@ -25,7 +36,6 @@ export default function EmailLister() {
     } catch (error) {
       console.error('Error:', error);
     }
-    setIsSent(true);
   }
 
   return (
